@@ -1,0 +1,13 @@
+"hello"
+"hello";
+let s = "hello";
+var s = "hello";
+s = "hello";
+def s = "hello";
+help
+exit
+scala
+session
+help session
+help
+exit

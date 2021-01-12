@@ -1,0 +1,15 @@
+module DNA (toRNA) where
+
+toRNA :: String -> Either Char String
+toRNA ns = case filter (not . (`elem` "GCTA")) ns of
+    [] -> Right (go ns)
+    (bad:_) -> Left bad
+    where
+        go [] = []
+        go (x:xs) = case x of
+            'G' -> 'C' : go xs
+            'C' -> 'G' : go xs
+            'T' -> 'A' : go xs
+            'A' -> 'U' : go xs
+            _ -> undefined
+

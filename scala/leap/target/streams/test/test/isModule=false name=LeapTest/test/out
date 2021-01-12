@@ -1,0 +1,5 @@
+[0m[[0m[0minfo[0m] [0m[0m[32mLeapTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- year not divisible by 4: common year[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[33m- year divisible by 4, not divisible by 100: leap year (pending)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[33m- year divisible by 100, not divisible by 400: common year (pending)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[33m- year divisible by 400: leap year (pending)[0m[0m

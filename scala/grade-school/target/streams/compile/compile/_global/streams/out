@@ -1,0 +1,6 @@
+[0m[[0m[31merror[0m] [0m[0m/workplace/hiljusti/exercism/scala/grade-school/src/main/scala/GradeSchool.scala:15:50: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : Seq[Set[String]][0m
+[0m[[0m[31merror[0m] [0m[0m required: Seq[String][0m
+[0m[[0m[31merror[0m] [0m[0m  def grade(g: Int): Seq[String] = roster.get(g).toSeq[0m
+[0m[[0m[31merror[0m] [0m[0m                                                 ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m

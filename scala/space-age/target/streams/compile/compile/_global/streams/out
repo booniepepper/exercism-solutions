@@ -1,0 +1,7 @@
+[0m[[0m[31merror[0m] [0m[0m/workplace/hiljusti/exercism/scala/space-age/src/main/scala/SpaceAge.scala:2:26: '=' expected but '=>' found.[0m
+[0m[[0m[31merror[0m] [0m[0m  def onEarth(y: Double) => Double = y / 315576e2[0m
+[0m[[0m[31merror[0m] [0m[0m                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/workplace/hiljusti/exercism/scala/space-age/src/main/scala/SpaceAge.scala:3:1: illegal start of simple expression[0m
+[0m[[0m[31merror[0m] [0m[0m  def onMercury: (Double) => Double = onEarth(_) * 0.2408467[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m

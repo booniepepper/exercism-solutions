@@ -1,0 +1,7 @@
+[0m[[0m[31merror[0m] [0m[0m/workplace/hiljusti/exercism/scala/leap/src/main/scala/Leap.scala:4:14: ';' expected but integer literal found.[0m
+[0m[[0m[31merror[0m] [0m[0m      && y % 100 != 0[0m
+[0m[[0m[31merror[0m] [0m[0m             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/workplace/hiljusti/exercism/scala/leap/src/main/scala/Leap.scala:5:14: ';' expected but integer literal found.[0m
+[0m[[0m[31merror[0m] [0m[0m      || y % 400 == 0[0m
+[0m[[0m[31merror[0m] [0m[0m             ^[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m

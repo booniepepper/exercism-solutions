@@ -1,0 +1,26 @@
+EXCLUDE_QUERY_DIR
+B /home/hiljusti/.opam/default/lib/base
+B /home/hiljusti/.opam/default/lib/base/base_internalhash_types
+B /home/hiljusti/.opam/default/lib/base/caml
+B /home/hiljusti/.opam/default/lib/base/shadow_stdlib
+B /home/hiljusti/.opam/default/lib/bytes
+B /home/hiljusti/.opam/default/lib/oUnit
+B /home/hiljusti/.opam/default/lib/ounit2
+B /home/hiljusti/.opam/default/lib/ounit2/advanced
+B /home/hiljusti/.opam/default/lib/sexplib0
+B /home/hiljusti/.opam/default/lib/stdlib-shims
+B /usr/lib/ocaml
+B _build/default/.test.eobjs/byte
+S /home/hiljusti/.opam/default/lib/base
+S /home/hiljusti/.opam/default/lib/base/base_internalhash_types
+S /home/hiljusti/.opam/default/lib/base/caml
+S /home/hiljusti/.opam/default/lib/base/shadow_stdlib
+S /home/hiljusti/.opam/default/lib/bytes
+S /home/hiljusti/.opam/default/lib/oUnit
+S /home/hiljusti/.opam/default/lib/ounit2
+S /home/hiljusti/.opam/default/lib/ounit2/advanced
+S /home/hiljusti/.opam/default/lib/sexplib0
+S /home/hiljusti/.opam/default/lib/stdlib-shims
+S /usr/lib/ocaml
+S .
+FLG -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -warn-error -A

@@ -1,0 +1,1 @@
+hamming.mli: Base Result
