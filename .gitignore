@@ -1,5 +1,9 @@
 .exercism
 
+#python
+.pytest_cache
+__pycache__
+
 # raku
 .precomp
 
