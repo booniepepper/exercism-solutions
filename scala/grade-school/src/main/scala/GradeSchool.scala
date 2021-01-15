@@ -1,19 +1,16 @@
-import scala.collection.immutable.TreeMap
-import scala.collection.immutable.TreeSet
+import scala.collection.immutable.SortedMap
 
 class School {
-  type DB = Map[Int, Set[String]]
-  private val roster: DB = TreeMap()
+  type DB = SortedMap[Int, Seq[String]]
+  private var roster: DB = SortedMap()
 
-  def add(name: String, g: Int) = roster.updatedWith(g){
-    case Some(names) => Some(names + name)
-    case None => Some(TreeSet(name))
-  }
+  def add(name: String, grade: Int): Unit =
+    roster += grade -> (roster.getOrElse(grade, Seq()) :+ name)
 
   def db: DB = roster
 
-  def grade(g: Int): Seq[String] = roster(g).toSeq
+  def grade(grade: Int): Seq[String] = roster.getOrElse(grade, Seq())
 
-  def sorted: DB = roster
+  def sorted: DB = roster.transform((_, names) => names.sorted)
 }
 
