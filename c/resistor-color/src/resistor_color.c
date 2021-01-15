@@ -1,8 +1,10 @@
 #include "resistor_color.h"
 
+#include <stdbool.h>
 #include <stdlib.h>
 
-static resistor_band_t COLORS[] = { BLACK, BROWN, RED, ORANGE, YELLOW, GREEN, BLUE, VIOLET, GREY, WHITE };
+const bool COLORS_INITIALIZED = false;
+static resistor_band_t COLORS[NUM_COLORS];
 
 int color_code(resistor_band_t color)
 {
@@ -11,6 +13,11 @@ int color_code(resistor_band_t color)
 
 resistor_band_t *colors()
 {
+    if (!COLORS_INITIALIZED) {
+        for (int i = 0; i <= NUM_COLORS; i++) {
+            COLORS[i] = i;
+        }
+    }
     return COLORS;
 }
 
