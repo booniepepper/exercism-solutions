@@ -15,6 +15,9 @@ gradlew.bat
 # haskell
 .stack-work
 
+# javascript
+node_modules
+
 # python
 .pytest_cache
 __pycache__
