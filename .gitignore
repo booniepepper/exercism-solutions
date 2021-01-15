@@ -3,6 +3,9 @@
 # c
 tests.out
 
+# elixir/erlang
+_build
+
 # gradle (java, kotlin, groovy)
 build
 gradle

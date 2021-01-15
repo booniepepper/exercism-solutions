@@ -1,1 +1,0 @@
--compile({parse_transform, exercism_parse_transform}).
