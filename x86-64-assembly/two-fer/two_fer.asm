@@ -27,9 +27,6 @@ two_fer:
   
   mov    rdi, rax
   lea    rsi, [rel greet_2]
-  call   copy
-
-  ret
 
 copy:
   movsb  ; rdi, rsi
