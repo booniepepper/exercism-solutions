@@ -1,6 +1,0 @@
-2021-01-04T08:09:49+00:00 blackbox#02 I: Start test leap tests:1:year divisible by 2, not divisible by 4 in common year.
-2021-01-04T08:09:49+00:00 blackbox#02 I: Test leap tests:1:year divisible by 2, not divisible by 4 in common year is successful.
-2021-01-04T08:09:49+00:00 blackbox#02 I: End test leap tests:1:year divisible by 2, not divisible by 4 in common year.
-2021-01-04T08:09:49+00:00 blackbox#02 I: Start test leap tests:4:year divisible by 400 in leap year.
-2021-01-04T08:09:49+00:00 blackbox#02 I: Test leap tests:4:year divisible by 400 in leap year is successful.
-2021-01-04T08:09:49+00:00 blackbox#02 I: End test leap tests:4:year divisible by 400 in leap year.

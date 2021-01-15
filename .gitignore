@@ -3,7 +3,7 @@
 # c
 tests.out
 
-# elixir/erlang
+# erlang
 _build
 
 # gradle (java, kotlin, groovy)
@@ -17,6 +17,9 @@ gradlew.bat
 
 # javascript
 node_modules
+
+# ocaml
+_build
 
 # python
 .pytest_cache
