@@ -1,15 +1,18 @@
 .exercism
 
-#c
+# c
 tests.out
 
-#gradle (Java, Kotlin, Groovy)
+# gradle (java, kotlin, groovy)
 build
 gradle
 gradlew
 gradlew.bat
 
-#python
+# haskell
+.stack-work
+
+# python
 .pytest_cache
 __pycache__
 
