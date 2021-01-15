@@ -1,5 +1,8 @@
 .exercism
 
+#c
+tests.out
+
 #python
 .pytest_cache
 __pycache__
