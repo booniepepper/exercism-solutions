@@ -3,6 +3,12 @@
 #c
 tests.out
 
+#gradle (Java, Kotlin, Groovy)
+build
+gradle
+gradlew
+gradlew.bat
+
 #python
 .pytest_cache
 __pycache__

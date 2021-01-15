@@ -1,2 +1,0 @@
-Gigasecond.java
- Gigasecond
