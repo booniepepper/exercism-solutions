@@ -11,10 +11,9 @@ typedef enum {
       BLUE,
       VIOLET,
       GREY,
-      WHITE
+      WHITE,
+      NUM_COLORS
 } resistor_band_t;
-
-#define NUM_COLORS 10
 
 int color_code(resistor_band_t color);
 resistor_band_t *colors();

@@ -3,7 +3,7 @@
 #include <stdbool.h>
 #include <stdlib.h>
 
-const bool COLORS_INITIALIZED = false;
+bool COLORS_INITIALIZED = false;
 static resistor_band_t COLORS[NUM_COLORS];
 
 int color_code(resistor_band_t color)
@@ -17,6 +17,7 @@ resistor_band_t *colors()
         for (int i = 0; i <= NUM_COLORS; i++) {
             COLORS[i] = i;
         }
+        COLORS_INITIALIZED = true;
     }
     return COLORS;
 }
