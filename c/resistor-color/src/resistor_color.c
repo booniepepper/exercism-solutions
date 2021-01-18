@@ -14,7 +14,7 @@ int color_code(resistor_band_t color)
 resistor_band_t *colors()
 {
     if (!COLORS_INITIALIZED) {
-        for (int i = 0; i <= NUM_COLORS; i++) {
+        for (size_t i = 0; i < NUM_COLORS; i++) {
             COLORS[i] = i;
         }
         COLORS_INITIALIZED = true;
