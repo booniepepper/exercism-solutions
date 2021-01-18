@@ -20,20 +20,15 @@ defmodule RomanNumerals do
   """
   @spec numeral(pos_integer) :: String.t()
   def numeral(number) do
-    {roman, 0} =
-      Enum.reduce(@numerals, {"", number}, fn r, acc ->
-        RomanNumerals.numeralize(r, acc)
-      end)
+    {numeral, 0} =
+      for {numeral, val} <- @numerals, reduce: {"", number} do
+        {acc_str, acc_val} ->
+          {
+            acc_str <> String.duplicate(numeral, Integer.floor_div(acc_val, val)),
+            Integer.mod(acc_val, val)
+          }
+      end
 
-    roman
-  end
-
-  def numeralize({numeral, val}, {acc, remaining}) do
-    times = Integer.floor_div(remaining, val)
-
-    {
-      acc <> String.duplicate(numeral, times),
-      Integer.mod(remaining, val)
-    }
+    numeral
   end
 end
