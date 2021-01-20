@@ -1,6 +1,8 @@
-Sound = tuple[str, int]
+from typing import List, Tuple
 
-sounds: list[Sound] = [
+Sound = Tuple[str, int]
+
+sounds: List[Sound] = [
     ('Pling', 3),
     ('Plang', 5),
     ('Plong', 7)
