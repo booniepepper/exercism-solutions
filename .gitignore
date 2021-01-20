@@ -1,9 +1,9 @@
 .exercism
 
-# c
+# gcc (c)
 tests.out
 
-# erlang
+# rebar3 (erlang)
 _build
 
 # gradle (java, kotlin, groovy)
@@ -13,10 +13,10 @@ gradle
 gradlew
 gradlew.bat
 
-# haskell
+# stack (haskell)
 .stack-work
 
-# javascript
+# npm (javascript)
 node_modules
 
 # ocaml
@@ -29,6 +29,6 @@ __pycache__
 # raku
 .precomp
 
-# scala
+# sbt/lein (scala, clojure)
 target
 
