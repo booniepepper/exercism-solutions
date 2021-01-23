@@ -11,5 +11,5 @@ isogram_chars([C|Cs]) :-
 unique_enough_char(C, Cs) :-
     C = '-';
     C = ' ';
-    not(member(C, Cs)).
+    \+ member(C, Cs).
 
