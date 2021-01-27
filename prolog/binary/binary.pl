@@ -8,9 +8,8 @@ bin_digit('0', 0).
 bin_digit('1', 1).
 
 bin_digits([], []).
-bin_digits([Char|Chars], [Dig|Digs]) :-
-    bin_digit(Char,Dig),
-    bin_digits(Chars, Digs).
+bin_digits(Chars, Digits) :-
+    maplist(bin_digit, Chars, Digits).
 
 binary_([], _, 0).
 binary_([Dig|Digs], K, Dec) :-
