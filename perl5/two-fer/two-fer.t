@@ -8,7 +8,7 @@ use lib $Bin, "$Bin/local/lib/perl5";
 use TwoFer qw(two_fer);
 
 my $C_DATA = do { local $/; decode_json(<DATA>); };
-plan 4;
+plan 6;
 
 imported_ok qw(two_fer) or bail_out;
 
@@ -47,6 +47,22 @@ __DATA__
         "name": "Bob"
       },
       "expected": "One for Bob, one for me."
+    },
+    {
+      "description": "empty name",
+      "property": "twoFer",
+      "input": {
+        "name": ""
+      },
+      "expected": "One for you, one for me."
+    },
+    {
+      "description": "zero name",
+      "property": "twoFer",
+      "input": {
+        "name": 0
+      },
+      "expected": "One for you, one for me."
     }
   ]
 }
