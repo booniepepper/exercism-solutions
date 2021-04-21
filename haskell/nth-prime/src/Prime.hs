@@ -1,4 +1,9 @@
 module Prime (nth) where
 
+import Data.Numbers.Primes (primes)
+
 nth :: Int -> Maybe Integer
-nth n = error "You need to implement this function."
+nth n
+  | n < 1 = Nothing
+  | otherwise = Just (primes !! (n-1))
+
