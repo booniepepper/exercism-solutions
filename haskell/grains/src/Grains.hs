@@ -1,7 +1,10 @@
 module Grains (square, total) where
 
+chessboard :: [(Integer, Integer)]
+chessboard = zip [1 ..] . map (2 ^) $ [0 .. 63]
+
 square :: Integer -> Maybe Integer
-square n = error "You need to implement this function."
+square n = lookup n chessboard
 
 total :: Integer
-total = error "You need to implement this function."
+total = sum . map snd $ chessboard
