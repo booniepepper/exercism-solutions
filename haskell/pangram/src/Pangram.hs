@@ -7,4 +7,5 @@ alphabet = "abcdefghijklmnopqrstuvwxyz"
 
 isPangram :: String -> Bool
 isPangram candidate = all (`elem` normalized) alphabet
-    where normalized = map toLower candidate
+  where
+    normalized = map toLower candidate
