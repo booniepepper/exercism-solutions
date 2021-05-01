@@ -2,5 +2,5 @@ USING: ;
 IN: hello-world
 
 : say-hello ( -- )
-  "Hello World!" ;
+  "Hello, World!" ;
 
