@@ -2,12 +2,10 @@
 
 -export([distance/2]).
 
-dist_of(Same, Same) -> 0;
-dist_of(_, _) -> 1.
+distance(As, Bs) -> distance(As, Bs, 0).
 
-distance(Left, Right) ->
-  case length(Left) =:= length(Right) of
-    true -> lists:sum(lists:zipwith(fun dist_of/2, Left, Right));
-    false -> {error, "left and right strands must be of equal length"}
-  end.
+distance([], [], N) -> N;
+distance([Same|As], [Same|Bs], N) -> distance(As, Bs, N);
+distance([   _|As], [   _|Bs], N) -> distance(As, Bs, N + 1);
+distance(_, _, _) -> {error, "left and right strands must be of equal length"}.
 
