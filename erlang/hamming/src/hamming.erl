@@ -2,12 +2,12 @@
 
 -export([distance/2]).
 
-into_diff({Same, Same}, Count) -> Count;
-into_diff(_, Count) -> Count + 1.
+dist_of(Same, Same) -> 0;
+dist_of(_, _) -> 1.
 
 distance(Left, Right) ->
   case length(Left) =:= length(Right) of
-    true -> lists:foldl(fun into_diff/2, 0, lists:zip(Left, Right));
+    true -> lists:sum(lists:zipwith(fun dist_of/2, Left, Right));
     false -> {error, "left and right strands must be of equal length"}
   end.
 
