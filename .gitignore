@@ -1,5 +1,8 @@
 .exercism
 
+# User solutions from mentored mode
+users/
+
 # gcc (c)
 tests.out
 
