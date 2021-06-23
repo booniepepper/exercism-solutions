@@ -6,5 +6,5 @@ main() {
   echo "One for $name, one for me."
 }
 
-main $@
+main "$@"
 
