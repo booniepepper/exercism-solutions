@@ -11,5 +11,5 @@ is_anagram(WordA, WordB) :-
 same(Same, Same).
 
 sorted_chars(Word, Sorted) :-
-  string_chars(Word, Chars),
+  atom_chars(Word, Chars),
   msort(Chars, Sorted).
