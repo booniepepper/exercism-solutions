@@ -1,24 +1,29 @@
 #!/usr/bin/env bash
 
-# The following comments should help you get started:
-# - Bash is flexible. You may use functions or write a "raw" script.
-#
-# - Complex code can be made easier to read by breaking it up
-#   into functions, however this is sometimes overkill in bash.
-#
-# - You can find links about good style and other resources
-#   for Bash in './README.md'. It came with this exercise.
-#
-#   Example:
-#   # other functions here
-#   # ...
-#   # ...
-#
-#   main () {
-#     # your main function code here
-#   }
-#
-#   # call main with all of the positional arguments
-#   main "$@"
-#
-# *** PLEASE REMOVE THESE COMMENTS BEFORE SUBMITTING YOUR SOLUTION ***
+if [[ -v 1 || -v 2 ]]
+then
+    echo 'Usage: hamming.sh <string1> <string2>'
+    exit 1
+fi
+
+if (( $(wc -c <<< "$1") != $(wc -c <<< "$2") ))
+then
+    echo 'left and right strands must be of equal length'
+fi
+
+exit -32
+
+strand_b="$2"
+len_b="$(wc -c <<< $strand_b)"
+
+@test "no input" {
+  [[ $BATS_RUN_SKIPPED == "true" ]] || skip
+  run bash hamming.sh
+  (( status == 1 ))
+if ((len_a != len_b))
+then
+    echo ERROR
+fi
+
+echo fail
+
